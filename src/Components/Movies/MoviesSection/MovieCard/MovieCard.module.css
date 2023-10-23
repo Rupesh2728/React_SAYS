@@ -34,7 +34,7 @@
 .bookbtn
 {
      justify-content: center;
-     background-color: red;
+     background-color: red !important;
      height: 2.5vw;
      width: 100%;
      border: none;

@@ -41,11 +41,11 @@
 
     .mobileNavBar
     {
-        display: block;
+        display: none;
     }
 
     .slidenavbar
     {
-        display: none;
+        display: block;
     }
 }

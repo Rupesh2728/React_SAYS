@@ -18,7 +18,7 @@
         display: block;
         margin: 20vw;
         margin-top: 6vw;
-        margin-bottom: 3vw;
+        margin-bottom: 2vw;
     }
 }
 
@@ -26,8 +26,8 @@
     .slogan
     {
         margin: 16vw;
-        margin-top: 20vw;
-        margin-bottom: 3vw;
+        margin-top: 8vw;
+        margin-bottom: 2vw;
         font-size: 3vw;
         width:75%;
     }
@@ -37,8 +37,8 @@
     .slogan
     {
        
-        margin-top: 30vw;
-        margin-bottom: 20vw;
+        margin-top: 8vw;
+        margin-bottom: 0vw;
         font-size: 3vw;
        
     }
@@ -48,8 +48,8 @@
     .slogan
     {
         margin: 16vw;
-        margin-top: 35vw;
-        margin-bottom: 2vw;
+        margin-top: 8vw;
+        margin-bottom: 0vw;
         font-size: 4vw;
         width:80%;
     }
