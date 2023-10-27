@@ -14,7 +14,7 @@ import Movies from "./Pages/Movies/Movies";
 // import Register from "./Pages/Register/Register";
 // <Register type="theatre" action="/SignUp" method="post"/>
 
-//sta
+//staion
 function App() {
   return ( 
   <>
