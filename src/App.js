@@ -1,4 +1,4 @@
-import {BrowserRouter} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Login from "./Pages/Login/Login";
 
@@ -28,8 +28,9 @@ import SeatArrangementPage from "./Pages/SeatArrangement/SeatArrangement";
 function App() {
   return ( 
   <>
-   <Home/>
-    {/* <Movies/> */}
+ 
+  
+   
   </>
   );
 }
