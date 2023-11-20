@@ -12,6 +12,7 @@ import SearchBar from './SearchBar/SearchBar';
 import MultiItemCarousalWrapper from '../../Common/MultiItemCarousel/MultiItemCarousalWrapper';
 import CarousalTitle from './CarousalTitle/CarousalTitle';
 import TheatreCard from './TheatreCard/TheatreCard'
+import classes from './SecondSection.module.css';
 // Use Redux to store all theatres info based on location and convert that array of obj's into cards and send that to Multi Item carousal component
 
 const SecondSection=()=>{ 
@@ -19,6 +20,7 @@ const SecondSection=()=>{
                         <TheatreCard/>,<TheatreCard/>,<TheatreCard/>,
                         <TheatreCard/>,<TheatreCard/>];
   return ( 
+  <div className={classes.style}>
     <TheatreSearch>
     <Container>     
            <Title/> 
@@ -48,7 +50,8 @@ const SecondSection=()=>{
                
           </Row>
       </Container>
-  </TheatreSearch>);
+  </TheatreSearch>
+  </div>);
 }
 
 export default SecondSection;

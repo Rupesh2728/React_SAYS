@@ -5,7 +5,6 @@ import mainlogo from '../../../../Assests/finalmainlogo.png';
 import MainNavBar from './MainNavBar/MainNavBar';
 import Location from '../../Location/Location';
 
-
 const LaptopNavBar=(props)=>{
     return (<>
       <div className={classes.laptopnavbar}>
@@ -30,8 +29,7 @@ const LaptopNavBar=(props)=>{
           
           <p className={classes.calenderdiv}>
           <input type='date' className={classes.calender}/>    
-         </p> 
-          
+         </p>    
         }      
         </Col>
       </Row>

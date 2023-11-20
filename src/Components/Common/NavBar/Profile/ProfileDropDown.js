@@ -15,11 +15,11 @@ const ProfileDropDown=(props)=>{
            </Dropdown.Toggle>
          
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1"><span className={classes.dropdownlist}>Profile</span></Dropdown.Item>
-              <Dropdown.Item href="#/action-2"><span className={classes.dropdownlist}>Recent Booking</span></Dropdown.Item>
-              <Dropdown.Item href="#/action-3"><span className={classes.dropdownlist}>Change Passwords</span></Dropdown.Item>
+              <Dropdown.Item href="/"><span className={classes.dropdownlist}>Profile</span></Dropdown.Item>
+              <Dropdown.Item href="/"><span className={classes.dropdownlist}>Recent Booking</span></Dropdown.Item>
+              <Dropdown.Item href="/"><span className={classes.dropdownlist}>Change Passwords</span></Dropdown.Item>
               <Dropdown.Divider/>
-              <Dropdown.Item href="#/action-3"><span className={classes.dropdownlist}>Sign Out</span></Dropdown.Item>
+              <Dropdown.Item href="/"><span className={classes.dropdownlist}>Sign Out</span></Dropdown.Item>
               </Dropdown.Menu>
         </Dropdown>
         </div>);

@@ -6,10 +6,13 @@ import classes from './Home.module.css'
 import ThirdSection from "../../Components/Home/ThirdSection/ThirdSection";
 import Footer from '../../Components/Common/Footer/Footer'
 import SecondSection from "../../Components/Home/SecondSection/SecondSection";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from "react-bootstrap";
 
 const Home=()=>{
-    return (<>
+    return (<div>
       <NavBar firstsection={FirstSection} pagename="Movies"/>
+     <Container>
      <div className={classes.laptopfirstsection}>
        <FirstSection/>
      </div>
@@ -20,8 +23,9 @@ const Home=()=>{
        <div className={classes.line}></div>
        <FourthSection/>
        <FifthSection/>
+      </Container>  
         <Footer/>
-    </>);
+    </div>);
 }
 
 export default Home;

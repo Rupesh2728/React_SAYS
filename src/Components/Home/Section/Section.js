@@ -8,7 +8,8 @@ import CustomCarousel from './Carousel/Carousel';
 
 const Section=(props)=>{
   return (
-  <section className={classes.section}>
+   <div className={classes.style}>
+      <section className={classes.section}>
      <Container>
         <div className={classes.secrow}>
           <Row>
@@ -40,6 +41,9 @@ const Section=(props)=>{
        </div>
     </Container>
  </section>
+
+   </div>
+  
  );
 }
 

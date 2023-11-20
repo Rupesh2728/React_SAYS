@@ -50,10 +50,13 @@ const sectioncontent={
 }
   
   return (
-    <Section responsiveobj={responsiveobj} 
+   
+       <Section responsiveobj={responsiveobj} 
     imgobjarr={CauroselImgObjs} 
     content={sectioncontent}
     />
+
+   
   );
 }
 
