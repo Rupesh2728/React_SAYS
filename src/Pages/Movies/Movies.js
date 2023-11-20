@@ -11,12 +11,9 @@ const Movies=()=>{
    <div className={classes.laptopfirstsection}>
      <SearchBarFilters/>
    </div>
-
     <MoviesSection title="Latest Movies" style={{}}/>
     <MoviesSection title="Upcoming Movies" style={{marginTop:"4rem"}}/>
-
-    <ReviewSection/>
-   
+    <ReviewSection/>   
      <Footer/>
   </>
   );

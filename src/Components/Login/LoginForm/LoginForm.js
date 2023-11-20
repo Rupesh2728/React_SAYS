@@ -10,14 +10,14 @@ const LoginForm=(props)=>{
     return (
   <div className={classes.loginbox}>
      <div className={classes.formbox}>
-         <form action="/login" method="post">
+         <form action={props.type==="user"?"/login":"Tlogin"} method="post">
            <h2>{Formheading}</h2>
            {inputs.map(item=>{
             return <Inputbox type={item}/>
            })}
            <ForgotPassword/>
           <Button type="submit" name="Sign In" style={{color:"#e4e4e4",backgroundColor:"#c4103d",fontSize:"16px",fontWeight:400}}/>
-          <LoginRegister type={props.type} changeLoginPage={props.changeLoginPage}/>
+          <LoginRegister type={props.type}/>
         </form>
      </div>
   </div>);

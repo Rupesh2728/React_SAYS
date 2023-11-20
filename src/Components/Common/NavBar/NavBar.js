@@ -10,13 +10,13 @@ const NavBar=({firstsection:FirstSection,pagename})=>{
          <div className={classes.laptopNavBar}>
            <LaptopNavBar pagename={pagename}/>
           </div>
-        <div className={classes.mobileNavBar}>
+        {/* <div className={classes.mobileNavBar}>
           <MobileNavBar firstsection={FirstSection} pagename={pagename}/>
         </div>
 
         <div className={classes.slidenavbar}>
           <SlideNavBar firstsection={FirstSection} pagename={pagename}/>
-        </div>
+        </div> */}
 
         </>
     );

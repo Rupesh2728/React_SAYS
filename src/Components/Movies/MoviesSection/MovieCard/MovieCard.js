@@ -39,8 +39,8 @@ const MovieCard=(props)=>{
 
           </div>
 
-          <div className={classes.movie_info}>          
-           <button type="button" className={classes.bookbtn}><p className={classes.btnname}>Book</p></button>
+          <div className={classes.movie_info}>               
+             <button type="button" className={classes.bookbtn}><p className={classes.btnname}>Book</p></button>  
           </div>
       </div>
     </div>
