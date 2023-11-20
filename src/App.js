@@ -13,12 +13,18 @@ import Movies from "./Pages/Movies/Movies";
 // import NavBAR from "./Components/Common/LaptopNavBar/Navbar";
 // import Register from "./Pages/Register/Register";
 // <Register type="theatre" action="/SignUp" method="post"/>
-
+import Theatre from "./Components/Theatre/theatredashboard/theatredashboard.js";
+import Usertheatreinfo from "./Components/Theatre/About Theatre/usertheatreinfo.js";
+import ProfilePage from "./Components/Theatre/Profile/ProfilePage.js";
 
 function App() {
   return ( 
   <>
-   <Home/>
+  {/* <ProfilePage/> */}
+{/* <Usertheatreinfo/> */}
+  <Theatre/>
+  
+   {/* <Home/> */}
     {/* <Movies/> */}
   </>
   );
