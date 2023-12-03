@@ -5,7 +5,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import ProfileDropDown from '../../Profile/ProfileDropDown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseChimney } from '@fortawesome/free-solid-svg-icons';
-
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 
 const MainNavBar=()=>{
     return (<div className={classes.mainnavbar}>
@@ -13,12 +18,12 @@ const MainNavBar=()=>{
          <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="navbar-nav" style={{width:"42vw"}}>
           <Nav>
-                <Nav.Link href='/user/home'><span className={classes.navtext}><FontAwesomeIcon icon={faHouseChimney} style={{color: "#ffd700",}} /></span></Nav.Link> 
-                <Nav.Link href='/user/movies'><span className={classes.navtext}>Movies</span></Nav.Link>  
-                <Nav.Link href='/user/snacks'><span className={classes.navtext}>Snacks</span></Nav.Link>  
-                <Nav.Link href='/user/news'><span className={classes.navtext}>News</span></Nav.Link>   
-                <Nav.Link href='/user/about'><span className={classes.navtext}>About</span></Nav.Link>
-                <Nav.Link href='/user/contactus'><span className={classes.navtext}>ContactUs</span></Nav.Link>
+                <Link to='/User/HomePage'><span className={`${classes.navtext} ml-1 mr-3`} ><FontAwesomeIcon icon={faHouseChimney} style={{color: "#ffd700",}} /></span></Link> 
+                <Link to='/User/MoviesPage'><span className={`${classes.navtext} mr-3`}>Movies</span></Link>  
+                <Link to='/User/SnacksPage'><span className={`${classes.navtext} mr-3`}>Snacks</span></Link>  
+                <Link to='/user/news'><span className={`${classes.navtext} mr-3`}>News</span></Link>   
+                <Link to='/user/about'><span className={`${classes.navtext} mr-3`}>About</span></Link>
+                <Link to='/user/contactus'><span className={`${classes.navtext} mr-3`}>ContactUs</span></Link>
           </Nav>     
       </Navbar.Collapse>
 

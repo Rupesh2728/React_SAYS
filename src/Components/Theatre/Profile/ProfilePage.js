@@ -24,7 +24,7 @@ const ProfilePage = () => {
                 }}>
                     <h1 className={PPCss.profileheading}>Profile</h1>
              
-
+                  
 
                 </div>
             </div>

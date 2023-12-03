@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 function TNavbar() {
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -17,21 +18,25 @@ function TNavbar() {
     <Navbar.Collapse id="basic-navbar-nav">
 
       <Nav className="me-auto">
-        <Nav.Link href="#home" style={{ color: 'gold' }}>
+        <Link to='/Theatre/Theatredashboard' className='mt-2 ml-2'  style={{ color: 'gold' }}>
           Home
-        </Nav.Link>
-        <Nav.Link href="#link" style={{ color: 'gold' }}>
-          Movies
-        </Nav.Link>
-        <Nav.Link href="#link" style={{ color: 'gold' }}>
-          Snacks
-        </Nav.Link>
-        <Nav.Link href="#link" style={{ color: 'gold' }}>
-          Theatre
-        </Nav.Link>
-        <Nav.Link href="#link" style={{ color: 'gold' }}>
-          About Theatre
-        </Nav.Link>
+        </Link>
+        <Link to='/Theatre/MoviesPage' className='mt-2 ml-2'  style={{ color: 'gold' }}>
+        Movies  
+        </Link>
+        <Link to='/' className='mt-2 ml-2'  style={{ color: 'gold' }}>
+        Snacks
+        </Link>
+        <Link to='/Theatre/TSchedule' className='mt-2 ml-2'  style={{ color: 'gold' }}>
+        Theatre
+        </Link>
+        <Link to='/Theatre/Usertheatreinfo' className='mt-2 ml-2'  style={{ color: 'gold' }}>
+        About Theatre
+        </Link>
+
+        
+      <Link to="/User/MoviesPage" style={{ color: 'gold' }}>
+              sdfsd</Link>
 
       </Nav>
 

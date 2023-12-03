@@ -15,7 +15,7 @@ const LoginRegister=(props)=>{
         <p className={classes.userlogin}>{name==="User"?"Theatre":"User"} Login?</p>
         </Link>
         <p className={classes.login_success}>
-         Login Success!!!
+         {/* Login Success!!! */}
         </p>
       </div>);
 }

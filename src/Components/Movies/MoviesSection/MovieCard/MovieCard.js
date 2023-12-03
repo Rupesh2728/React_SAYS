@@ -1,12 +1,28 @@
 import classes from './MovieCard.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock,faThumbsUp } from '@fortawesome/free-solid-svg-icons';
-const MovieCard=(props)=>{
+import React from 'react';
+import { useNavigate } from "react-router-dom";
+
+const MovieCard=({MovieDetails})=>{
+  
+   
+  const x=useNavigate();
+
+  function onClickHandler(){
+    
+    
+    x(`/User/IndividualPage?MovieDetails=${JSON.stringify(MovieDetails)}`);
+
+  }
+  
+
   return (
   <>
-    <div className={classes.card} style={{backgroundImage:"url('https://i.ytimg.com/vi/bUR_FKt7Iso/maxresdefault.jpg')"}}>
+
+    <div className={classes.card} style={{backgroundImage:`url(${MovieDetails.MovieImageURL})`}}>
                <div className={classes.title}>
-                 Salaar  
+                 {MovieDetails.MovieName} 
               </div>
         
         <div className={classes.cardbody}>
@@ -40,7 +56,7 @@ const MovieCard=(props)=>{
           </div>
 
           <div className={classes.movie_info}>               
-             <button type="button" className={classes.bookbtn}><p className={classes.btnname}>Book</p></button>  
+             <button type="button" onClick={onClickHandler} className={classes.bookbtn}><p className={classes.btnname}>Book</p></button>  
           </div>
       </div>
     </div>
